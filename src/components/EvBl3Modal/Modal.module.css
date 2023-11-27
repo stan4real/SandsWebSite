@@ -1,0 +1,50 @@
+.container{
+    width: 100%;
+    height:700px;
+    margin: 0 auto;
+    font-size: 30px;
+    position: relative;
+}
+.ModalStyles{
+    position: fixed;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color:transparent;
+    padding: 50px;
+    z-index: 1000;
+    border-radius: 20px;
+}
+.OverlayStyles{
+    background-color: black;
+    opacity: 0.8;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 4;
+    
+
+}
+.Alt{
+    position: absolute;
+    bottom: -300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 1000px;
+    height: 100px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 15px;
+
+}
+.text {
+    display: flex;
+    color:#41143E;
+    font-size: 24px;
+    font-weight: 600;
+    font-family: 'Inter', 'sans-serif';
+}

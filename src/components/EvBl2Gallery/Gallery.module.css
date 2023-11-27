@@ -1,0 +1,91 @@
+.container{
+    width: 100%;
+    height:2000px;
+    margin: 0 auto;
+    position: relative;
+}
+.limited{
+    max-height: 1840px;
+    overflow: hidden;
+    
+}
+.limited .bottom{
+    position: absolute;
+    bottom: -10px;
+    width: 100%;
+    height: 60px;
+    opacity: 0.5;
+    transition: 0.3s;
+}
+.readMoreChecker{
+    opacity: 0;
+    position: absolute;
+    top: 1500px;
+}
+.readMoreButton{
+    color: #563E55;
+    font-family: 'Ubuntu';
+    font-size: 32px;
+}
+.readMoreChecker:checked ~ .limited{
+    max-height: none;
+}
+.Svernut{
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    align-items: center;
+}
+.dash{
+    width: 172px;
+    height: 0px;
+    border: 2px solid #EA068A;
+    position: absolute;
+    top: 40px;
+}
+.DopContainer{
+    width: 80%;
+    padding-left: 10%;
+    padding-right: 10%;
+    
+}
+.container h1{
+    font-family: 'Pobeda';
+    color: #563E55;
+    font-size: 59px;
+}
+.FlexContainer{
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2%;
+}
+.FlexRow{
+    display: flex;
+    justify-content: row;
+    align-items: space-between;
+    width: 100%;
+    height: 600px;
+    gap: 3%;
+}
+.FlexImage1{
+    background-image: url(../../../public/mascott.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+    width: 38%;
+    height: 576px;
+}
+.FlexImage2{
+    background-image: url(../../../public/maidanov.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+    width: 59%;
+    height: 576px;
+}
+.ModalButton{
+    position: relative;
+    z-index: 3;
+}
